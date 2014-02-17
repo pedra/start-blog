@@ -1,0 +1,26 @@
+{
+    "name": "neos/start-blog",
+    "type": "starter",
+    "description": "Simple skeleton for PHP blog.",
+    "keywords": ["framework", "starter", "simple"],
+    "homepage": "http://phps.tk",
+    "license": "MIT",
+    "authors": [{
+        "name": "Bill Rocha",
+        "email": "prbr@ymail.com"
+    }],
+    "config": {
+        "vendor-dir": "php/vendor",
+        "bin-dir": "php/vendor/bin"
+    },
+    "archive": {
+        "exclude": ["/doc", "/*.json", "/.git", "/*.md"]
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "neos/start": "dev-master",
+        "neos/data": "dev-master",
+        "neos/html": "dev-master"
+    },
+    "minimum-stability": "dev"
+}
