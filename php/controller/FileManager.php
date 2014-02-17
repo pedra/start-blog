@@ -6,6 +6,10 @@
  */
 
 class FileManager {
+
+	function __construct(){
+        if(o::db(o::db('default'))['password'] == '') go('Admin');
+    }
 	
 
 	function index(){

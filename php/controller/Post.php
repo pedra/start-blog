@@ -6,6 +6,10 @@
  * @author Bill Rocha <prbr@ymail.com at http://billrocha.tk>
  */
 class Post {
+
+	function __construct(){
+        if(o::db(o::db('default'))['password'] == '') go('Admin');
+    }
     
     function index($id = 0){
         $id = 0 + $id; 

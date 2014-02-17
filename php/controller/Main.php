@@ -3,11 +3,13 @@
 
 class Main {
 
+    function __construct(){
+        if(o::db(o::db('default'))['password'] == '') go('Admin');
+    }
+
 
     function index($ano = 0, $mes = 0, $link = '') {
-
-        if(o::db(o::db('default'))['password'] == '') go('Admin');
-
+        
         $ano = 0 + $ano;
         if(trim($link) != '') return $this->post($ano, $mes, $link);
         
