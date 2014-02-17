@@ -35,8 +35,8 @@ class Admin {
 
 
     function install(){
-        return 'Esta função (instalação) ainda não foi criada!<br>
-        Importe /php/blog.sql para seu Mysql e depois configure os dados de acesso em /php/app.ini <br>
+        return 'Esta função (instalação) ainda não foi criada!<br><br>
+        Importe '.PPHP.'blog.sql para seu Mysql e depois configure os dados de acesso em '.PPHP.'app.ini <br>
         <b>Não deixe a senha em branco</b>.';
     }
     
